@@ -28,12 +28,17 @@ const data = [
 ]
 
 const Curriculum = () => {
+  console.log({ data })
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Coding Curriculum</h1>
-        <h1>Coming Soon</h1>
-      </header>
+    <div className="container-fluid mh-100">
+      <div className="row">
+        <div className="col-2 bg-primary">
+          <p className="mh-100">Column</p>
+        </div>
+        <div className="col-10 bg-info">
+          Column
+        </div>
+      </div>
     </div>
   );
 }
