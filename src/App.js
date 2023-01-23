@@ -1,22 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+
+const App = () => {
+  console.log("I am here")
+  console.log(process.env.REACT_APP_BACKEND_API)
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Momi Foundation Coding</h1>
+        <h1>Coming Soon</h1>
       </header>
     </div>
   );
