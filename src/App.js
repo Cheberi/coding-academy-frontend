@@ -1,16 +1,14 @@
 import './App.css';
-
+import { createRoot } from "react-dom/client";
+import router from './route.js'
+import { RouterProvider } from "react-router-dom";
 
 const App = () => {
-  console.log("I am here")
   console.log(process.env.REACT_APP_BACKEND_API)
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Momi Foundation Coding</h1>
-        <h1>Coming Soon</h1>
-      </header>
-    </div>
+    createRoot(document.getElementById("root")).render(
+      <RouterProvider router={router} />
+    )
   );
 }
 
